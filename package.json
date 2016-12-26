@@ -2,10 +2,14 @@
   "name": "reloaded-themes",
   "displayName": "Reloaded Themes",
   "description": "Themes designed for 'C/C++ Reloaded' extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "reloadedextensions",
   "engines": { "vscode": "*" },
   "categories": ["Themes"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kobalicek/reloaded-themes.git"
+  },
   "contributes": {
     "themes": [{
       "label": "Reloaded Dark (use with 'C/C++ Reloaded' extension)",
