@@ -1,7 +1,7 @@
 ## Reloaded themes
 
-A collection of themes (only dark at the moment) designed to use extended styles provided by C/C++ Reloaded extension.
+A collection of themes (only dark at the moment) designed to use extended styles provided by ![https://marketplace.visualstudio.com/items?itemName=reloadedextensions.reloaded-cpp](Reloaded C/C++) extension.
 
 ![C++ Sample](./samples/sample.cpp.png)
 
-NOTE: This is a beta-theme, it's still adjusted from time to time to make it better. It's planned to have more color variations in the future, however, before the 'Reloaded C/C++' extension is stabilized it will provide only the dark theme.
+NOTE: This theme should be considered BETA as it's still work-in-progress. It's planned to provide also light version of this theme after the 'Reloaded C/C++' extension stabilizes.

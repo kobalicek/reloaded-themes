@@ -53,8 +53,8 @@
                 "support.constant.failure",
                 "support.error-detection.failure"]    , "settings": { "foreground": "#ff4242", "fontStyle": "italic"  } },
 
-    { "scope": "support.allupper"                     , "settings": { "foreground": "#ce9178"  } },
-    { "scope": ["support.firstupper"]                 , "settings": { "foreground": "#71d4e4"  } },
+    { "scope": "support.all-upper"                    , "settings": { "foreground": "#ce9178"  } },
+    { "scope": ["support.first-upper"]                , "settings": { "foreground": "#71d4e4"  } },
 
     { "scope": ["keyword.control.function"]           , "settings": { "foreground": "#cda869"  } },
 
@@ -85,14 +85,17 @@
                 "string.tag",
                 "punctuation.single.quoted.string",
                 "punctuation.double.quoted.string"]   , "settings": { "foreground": "#8f9d6a"  } },
-    { "scope": ["character.escape",
-                "character.format"]                   , "settings": { "foreground": "#AfFd8a"  } },
+    { "scope": ["character.escape"]                   , "settings": { "foreground": "#EDC869"  } },
+    { "scope": ["character.format"]                   , "settings": { "foreground": "#AfFd8a"  } },
     { "scope": ["string.regexp"]                      , "settings": { "foreground": "#d16969"  } },
 
     { "scope": "support.property-name"                , "settings": { "foreground": "#cda869"  } },
-    { "scope": "variable.language.this"               , "settings": { "foreground": "#9b859d"  } },
+    { "scope": ["variable.language.this",
+                "first-lower-underscore-prefix",
+                "first-lower-underscore-suffix"]      , "settings": { "foreground": "#9b859d"  } },
     { "scope": "keyword"                              , "settings": { "foreground": "#569cd6"  } },
-    { "scope": "keyword.control"                      , "settings": { "foreground": "#569cd6"  } },
+    { "scope": ["keyword.control",
+                "support.double-underscore-prefix.cpp"], "settings": { "foreground": "#569cd6"  } },
     { "scope": "keyword.control.less"                 , "settings": { "foreground": "#d7ba7d"  } },
     { "scope": ["keyword.operator"]                   , "settings": { "foreground": "#fa8d6a"  } },
     { "scope": "keyword.operator.new"                 , "settings": { "foreground": "#569cd6"  } },

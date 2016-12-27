@@ -19,7 +19,7 @@ public:
   bool _b;
 };
 
-// Line comment: Basic doxygen-specific commands like \brief and \param x are also recognized. 
+// Line comment: Basic doxygen-specific commands like \brief and @param x are also recognized. 
 class DerivedClass : public SampleClass {
 public:
   CUSTOM_API uint8_t virtualMethod() noexcept override { return this->asUInt8(); };
