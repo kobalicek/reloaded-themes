@@ -1,6 +1,6 @@
 ## Reloaded themes
 
-A collection of themes (only dark at the moment) designed to use extended styles provided by ![https://marketplace.visualstudio.com/items?itemName=reloadedextensions.reloaded-cpp](Reloaded C/C++) extension.
+A collection of themes (only dark at the moment) designed to use extended styles provided by [Reloaded C/C++](https://marketplace.visualstudio.com/items?itemName=reloadedextensions.reloaded-cpp) extension.
 
 ![C++ Sample](./samples/sample.cpp.png)
 
