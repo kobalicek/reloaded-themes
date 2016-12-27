@@ -15,6 +15,7 @@
     { "scope": "header"                               , "settings": { "foreground": "#000080"  } },
     { "scope": "comment"                              , "settings": { "foreground": "#606060"  } },
     { "scope": "comment.line.banner"                  , "settings": { "fontStyle" : "bold"     } },
+    { "scope": "comment.code"                         , "settings": { "foreground": "#ce9178"  } },
     { "scope": "constant.boolean"                     , "settings": { "foreground": "#569cd6"  } },
     { "scope": "constant.numeric"                     , "settings": { "foreground": "#78cf8a"  } },
     { "scope": "constant.regexp"                      , "settings": { "foreground": "#b46695"  } },
@@ -31,7 +32,8 @@
                 "punctuation.begin.parens",
                 "punctuation.end.parens",
                 "punctuation.begin.section",
-                "punctuation.end.section"]            , "settings": { "foreground": "#24c2c7"  } },
+                "punctuation.end.section",
+                "comment.code-punctuation"]           , "settings": { "foreground": "#24c2c7"  } },
 
     { "scope": "meta.tag"                             , "settings": { "foreground": "#808080"  } },
     { "scope": "meta.preprocessor"                    , "settings": { "foreground": "#ce9178"  } },
@@ -64,7 +66,9 @@
                 "support.type.std",
                 "support.type.stdint",
                 "support.type.winstd",
-                "support.type.winapi"]                , "settings": { "foreground": "#6199d4"  } },
+                "support.type.winapi",
+                "comment.command",
+                "comment.variable"]                   , "settings": { "foreground": "#6199d4"  } },
 
     { "scope": ["constant.language",
                 "constant.nullptr",
@@ -73,7 +77,9 @@
                 "keyword.cast"]                       , "settings": { "foreground": "#cda869"  } },
 
     { "scope": ["support.constant.std",
-                "support.constant.k-something"]       , "settings": { "foreground": "#51b1ce", "fontStyle": "italic" } },
+                "support.constant.k-something",
+                "comment.docgroup",
+                "comment.variable"]                   , "settings": { "foreground": "#51b1ce", "fontStyle": "italic" } },
 
     { "scope": ["string",
                 "string.tag",

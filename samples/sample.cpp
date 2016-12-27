@@ -8,6 +8,7 @@
 
 namespace sample {
 
+/* Block comment: Markdown specific comments like `SampleClass` are recognized. */
 class SampleClass {
 public:
   inline SomeClass() noexcept : _a(0.1), _b(false) {}
@@ -18,6 +19,7 @@ public:
   bool _b;
 };
 
+// Line comment: Basic doxygen-specific commands like \brief and \param x are also recognized. 
 class DerivedClass : public SampleClass {
 public:
   CUSTOM_API uint8_t virtualMethod() noexcept override { return this->asUInt8(); };
