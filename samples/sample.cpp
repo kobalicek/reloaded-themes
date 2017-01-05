@@ -1,14 +1,13 @@
 // Reloaded C/C++ Sample.
 #include <stdio.h>
-#include "./local.h"
 
 #if !defined(RELOADED)
 # define ALL_UPPERCASED 2
 #endif // !defined(RELOADED)
 
-namespace sample {
+namespace sample {}
 
-/* Block comment: Markdown specific comments like `SampleClass` are recognized. */
+/* Markdown code sections like `SampleClass` are recognized. */
 class SampleClass {
 public:
   inline SomeClass() noexcept : _a(0.1), _b(false) {}
@@ -19,27 +18,44 @@ public:
   bool _b;
 };
 
-// Line comment: Basic doxygen-specific commands like \brief and @param x are also recognized. 
+// Doxygen commands like \brief and @param x are recognized as well.
 class DerivedClass : public SampleClass {
 public:
   CUSTOM_API uint8_t virtualMethod() noexcept override { return this->asUInt8(); };
+  __attribute__((__visibility__("hidden"))) void test();
 };
+void DerivedClass::test() {}
 
+// Constants starting with `k` prefix are recognized and highlighted.
 enum SampleEnum {
   kSampleFirst = 0,
   kSamplekSecond = 1
 };
 
+// Numeric value suffix uses slightly different shade than the number itself.
+static const unsigned int binConst = 0b01010101_00110011_00001111_00000000u;
+static const unsigned long hexConst = 0x12345678UL;
+
+// ---------------------------------------------------------------
+// [Sample code that shows some extra features compared to others]
+// ---------------------------------------------------------------
+
 static void sampleAssert(int x) { assert(x >= 0); CUSTOM_ASSERT(x >= 0); }
-static void sampleLikely(int x) { if (likely(x) || CUSTOM_LIKELY(x)) printf("Likely %d!", x); }
-static void sampleMacros(int x) { return SUCCEEDED(x) || FAILED(x); }
-static void sampleSuccess(int x) { return x != kErrorOk && x != ERROR_OK; }
-static void sampleError(int x) { return x == ENOMEM || x == kErrorSomething || x == ERROR_SOMETHING; }
-static void sampleAnything(int x) { return x != kAnythingElse; }
+static void sampleLikely(int x) { if (likely(x) || CUSTOM_LIKELY(x)) doSomething(); }
+static bool sampleTernary(int x) { return x ? true : false; }
+static bool sampleStatus(int x) { return SUCCEEDED(x) || FAILED(x); }
+static bool sampleSuccess(int x) { return x == kErrorOk && x == ERROR_OK; }
+static bool sampleFailure(int x) { return x == ENOMEM || x == kErrorSomething || x == ERROR_SOMETHING; }
+static void sampleSignal() { raise(SIGKILL + SIGUNKNOWN); }
+
+static bool sampleAnything(int x) { return x != kAnythingElse; }
 static void sampleAllUpper() { ALL_UPPERCASED(); }
 static void sampleWin(HKEY hKey);
-static void sampleFormat(FILE* file) { fprintf(file, "Reloaded C++ v%d.%d.%5d\n", 0, 0, 1); }
+static void sampleFormat(FILE* file = stdout) { fprintf(file, "Reloaded C++ v%d.%d.%5d\n", 0, 0, 1); }
 static void samplePthread(pthread_t* thread) { pthread_join(thread, nullptr); }
-static void sampleSignal() { raise(SIGKILL); }
 
-} // sample namespace
+static SampleClass* sampleNew() { return new(std::nothrow) DerivedClass(); }
+static void sampleDelete(SampleClass* obj) { delete obj; }
+
+template<typename T>
+static size_t sampleSizeOfT() { return sizeof(T); }
