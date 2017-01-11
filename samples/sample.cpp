@@ -1,8 +1,8 @@
 // Reloaded C/C++ Sample.
 #include <stdio.h>
 
-#if !defined(RELOADED)
-# define ALL_UPPERCASED 2
+#if !defined(RELOADED) && defined(__amd64__) // Target-specific macros supported.
+# define ALL_UPPERCASED_IF_CONST_OR_MACRO 2
 #endif // !defined(RELOADED)
 
 namespace sample {}
@@ -49,7 +49,7 @@ static bool sampleFailure(int x) { return x == ENOMEM || x == kErrorSomething ||
 static void sampleSignal() { raise(SIGKILL + SIGUNKNOWN); }
 
 static bool sampleAnything(int x) { return x != kAnythingElse; }
-static void sampleAllUpper() { ALL_UPPERCASED(); }
+static int sampleAllUpper() { return ALL_UPPERCASED_IF_CONST_OR_MACRO; }
 static void sampleWin(HKEY hKey);
 static void sampleFormat(FILE* file = stdout) { fprintf(file, "Reloaded C++ v%d.%d.%5d\n", 0, 0, 1); }
 static void samplePthread(pthread_t* thread) { pthread_join(thread, nullptr); }
@@ -59,3 +59,4 @@ static void sampleDelete(SampleClass* obj) { delete obj; }
 
 template<typename T>
 static size_t sampleSizeOfT() { return sizeof(T); }
+
