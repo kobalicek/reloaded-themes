@@ -4,4 +4,4 @@ A collection of themes (only dark at the moment) designed to use extended styles
 
 ![C++ Sample](./samples/sample.cpp.png)
 
-NOTE: This theme should be considered BETA as it's still work-in-progress. It's planned to provide also light version of this theme after the 'Reloaded C/C++' extension stabilizes.
+NOTE: This theme should be considered BETA as it's still a work-in-progress. It's planned to provide also light version of this theme after the 'Reloaded C/C++' extension stabilizes.

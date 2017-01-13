@@ -2,7 +2,7 @@
   "name": "reloaded-themes",
   "displayName": "Reloaded Themes",
   "description": "Themes designed for 'Reloaded C/C++' extension",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "reloadedextensions",
   "engines": { "vscode": "^1.9.0" },
   "categories": ["Themes"],

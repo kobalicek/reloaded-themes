@@ -3,7 +3,7 @@
 
 #if !defined(RELOADED) && defined(__amd64__) // Target-specific macros supported.
 # define ALL_UPPERCASED_IF_CONST_OR_MACRO 2
-#endif // !defined(RELOADED)
+#endif --invalid_token_after_endif           // Comment is fine...
 
 namespace sample {}
 
@@ -51,7 +51,7 @@ static void sampleSignal() { raise(SIGKILL + SIGUNKNOWN); }
 static bool sampleAnything(int x) { return x != kAnythingElse; }
 static int sampleAllUpper() { return ALL_UPPERCASED_IF_CONST_OR_MACRO; }
 static void sampleWin(HKEY hKey);
-static void sampleFormat(FILE* file = stdout) { fprintf(file, "Reloaded C++ v%d.%d.%5d\n", 0, 0, 1); }
+static void sampleFormat(FILE* file = stdout) { ::fprintf(file, "Reloaded C++ v%d.%d.%5d\n", 0, 0, 1); }
 static void samplePthread(pthread_t* thread) { pthread_join(thread, nullptr); }
 
 static SampleClass* sampleNew() { return new(std::nothrow) DerivedClass(); }
