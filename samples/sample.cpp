@@ -27,6 +27,9 @@ public:
 void DerivedClass::test() {}
 
 // Constants starting with `k` prefix are recognized and highlighted.
+//
+// TODO: Common patterns as TODO|FIXME|HACK|ERROR|WARNING|FATAL highlighted.
+// TODO(some-person): Some code-bases use assignment inside TODO(...) as well.
 enum SampleEnum {
   kSampleFirst = 0,
   kSamplekSecond = 1

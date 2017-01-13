@@ -16,6 +16,7 @@
 
     { "scope": ["header"]                              , "settings": { "foreground": "#000080"  } },
     { "scope": ["invalid"]                             , "settings": { "foreground": "#f44747"  } },
+    { "scope": ["meta.invalid-continuation.cpp"]       , "settings": { "foreground": "#f44747", "background": "#8F0000"  } },
 
     { "scope": ["comment"]                             , "settings": { "foreground": "#606060"  } },
     { "scope": ["comment.line.banner"]                 , "settings": { "fontStyle" : "bold"     } },
@@ -23,8 +24,9 @@
                 "comment.code-punctuation"]            , "settings": { "foreground": "#afafaf"  } },
     { "scope": ["comment.command"]                     , "settings": { "foreground": "#386ea7"  } },
     { "scope": ["comment.variable"]                    , "settings": { "foreground": "#386ea7"  } },
-    { "scope": ["comment.section"]                     , "settings": { "foreground": "#7d7d7d", "fontStyle": "bold" }  },
+    { "scope": ["comment.section"]                     , "settings": { "foreground": "#7d7d7d", "fontStyle": "bold" } },
     { "scope": ["comment.decoration"]                  , "settings": { "foreground": "#7d7d7d"  } },
+    { "scope": ["comment.note"]                        , "settings": { "foreground": "#8d8d8d", "fontStyle": "bold" } },
 
     { "scope": ["keyword"]                             , "settings": { "foreground": "#569cd6"  } },
 
