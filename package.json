@@ -2,7 +2,7 @@
   "name": "reloaded-themes",
   "displayName": "Reloaded Themes",
   "description": "Themes designed for 'Reloaded C/C++' extension",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "reloadedextensions",
   "engines": { "vscode": "^1.9.0" },
   "categories": ["Themes"],
@@ -15,9 +15,13 @@
   },
   "contributes": {
     "themes": [{
-      "label": "Reloaded Dark (use with 'C/C++ Reloaded' extension)",
-      "uiTheme": "vs-dark",
-      "path": "./themes/reloaded-dark.json"
+      "label": "Reloaded Dark [Default]",
+      "path": "./themes/reloaded-dark.json",
+      "uiTheme": "vs-dark"
+    }, {
+      "label": "Reloaded Dark [High-Contrast]",
+      "path": "./themes/reloaded-dark-hc.json",
+      "uiTheme": "hc-black"
     }]
   }
 }

@@ -1,0 +1,7 @@
+{
+  "name": "Reloaded Dark",
+  "include": "./reloaded-dark.json",
+  "settings": [
+    { "settings": { "foreground": "#EFEFEF" } }
+  ]
+}
