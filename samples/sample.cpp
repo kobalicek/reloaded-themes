@@ -32,7 +32,7 @@ void DerivedClass::test() {}
 // TODO(some-person): Some projects use assignment inside TODO(...) as well.
 enum SampleEnum {
   kSampleFirst = 0,
-  kSamplekSecond = 1
+  kSampleSecond = 1
 };
 
 // Numeric value suffix uses slightly different shade than the number itself.

@@ -1,7 +1,12 @@
 {
   "name": "Reloaded Dark",
-  "include": "./reloaded-dark.json",
+  "include": "./reloaded-dark-core.json",
   "settings": [
-    { "settings": { "foreground": "#EFEFEF" } }
+    {
+      "settings": {
+        "background": "#000000",
+        "foreground": "#EFEFEF"
+      }
+    }
   ]
 }
