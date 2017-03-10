@@ -19,10 +19,10 @@
     { "scope": ["comment"]                             , "settings": { "foreground": "#707070"  } },
     { "scope": ["comment.line.banner"]                 , "settings": { "fontStyle" : "bold"     } },
     { "scope": ["comment.code-block",
-                "comment.code-punctuation"]            , "settings": { "foreground": "#000000", "fontStyle": "bold"  } },
+                "comment.code-punctuation"]            , "settings": { "foreground": "#505050"  } },
     { "scope": ["comment.docgroup", "comment.command"] , "settings": { "foreground": "#b34a00"  } },
     { "scope": ["comment.variable"]                    , "settings": { "foreground": "#386ea7"  } },
-    { "scope": ["comment.section"]                     , "settings": { "foreground": "#505050", "fontStyle": "bold" } },
+    { "scope": ["comment.section"]                     , "settings": { "foreground": "#707070", "fontStyle": "bold" } },
     { "scope": ["comment.decoration"]                  , "settings": { "foreground": "#505050"  } },
     { "scope": ["comment.note"]                        , "settings": { "foreground": "#a07676", "fontStyle": "bold" } },
 
@@ -123,7 +123,7 @@
 
     { "scope": ["variable.language.this",
                 "support.first-lower-underscore-prefix.cpp",
-                "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#9b859d"  } },
+                "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#6e366f"  } },
 
     { "scope": ["support.double-underscore-prefix.cpp"], "settings": { "foreground": "#569cd6"  } },
     { "scope": ["keyword.control.less"]                , "settings": { "foreground": "#cc6309"  } },
