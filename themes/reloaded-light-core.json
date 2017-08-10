@@ -29,7 +29,7 @@
     { "scope": ["keyword"]                             , "settings": { "foreground": "#0c4892"  } },
 
     { "scope": ["constant.boolean"]                    , "settings": { "foreground": "#3d6b8c"  } },
-    { "scope": ["constant.numeric"]                    , "settings": { "foreground": "#005fd6"  } },
+    { "scope": ["constant.numeric","constant.character"]                    , "settings": { "foreground": "#005fd6"  } },
     { "scope": ["constant.number-suffix"]              , "settings": { "foreground": "#48429a"  } },
     { "scope": ["constant.regexp"]                     , "settings": { "foreground": "#b46695"  } },
     { "scope": ["constant.rgb-value"]                  , "settings": { "foreground": "#846695"  } },
@@ -41,7 +41,7 @@
     { "scope": ["entity.other.attribute-name.class"]   , "settings": { "foreground": "#005794"  } },
     { "scope": ["entity.other.attribute-name.pseudo-class"], "settings": { "foreground": "#c76e00", "fontStyle": "bold"  } },
 
-    { "scope": ["meta.tag"]                            , "settings": { "foreground": "#808080"  } },
+    { "scope": ["punctuation.definition.tag"]                            , "settings": { "foreground": "#808080"  } },
     { "scope": ["meta.selector"]                       , "settings": { "foreground": "#7d6819"  } },
     { "scope": ["meta.property-name"]                  , "settings": { "foreground": "#22630e"  } },
     { "scope": ["meta.template.expression.js"]         , "settings": { "foreground": "#11359a"  } },
@@ -80,10 +80,7 @@
                 "keyword.operator.sizeof.cpp",
                 "keyword.operator.in.js",
                 "keyword.operator.typeof.js",
-                "support.something-t.cpp",
-                "support.type.misc.cpp",
-                "support.type.libc.cpp",
-                "support.type.python"]                 , "settings": { "foreground": "#0c4892"  } },
+                "support.something-t.cpp"]                 , "settings": { "foreground": "#0c4892"  } },
 
     { "scope": ["meta.preprocessor.command.cpp",
                 "meta.preprocessor.keyword.cpp",
@@ -108,11 +105,11 @@
                 "storage.modifier.volatile.cpp",
                 "storage.modifier.restrict.cpp"]       , "settings": { "foreground": "#3587c1", "fontStyle": "bold" } },
 
-    { "scope": ["entity.name.function.python"]         , "settings": { "foreground": "#000000", "fontStyle": "bold" } },
+    { "scope": ["entity.name.function","meta.definition.method"]         , "settings": { "foreground": "#000000", "fontStyle": "bold" } },
 
     { "scope": ["operator.namespace-separator.cpp",
                 "punctuation.section.function.begin.python",
-                "punctuation.separator.colon.python"]  , "settings": { "foreground": "#cc6309", "fontStyle": "bold" } },
+                "punctuation.separator.colon.python"]  , "settings": { "foreground": "#808080", "fontStyle": "bold" } },
 
     { "scope": ["support.constant.std.libc.cpp",
                 "support.constant.predefined.cpp",
@@ -122,30 +119,32 @@
                 "string.tag",
                 "punctuation.single.quoted.string",
                 "punctuation.double.quoted.string"]    , "settings": { "foreground": "#38861f"  } },
-    { "scope": ["constant.character.escape"]           , "settings": { "foreground": "#cc6309"  } },
     { "scope": ["constant.character.format"]           , "settings": { "foreground": "#247d98"  } },
-    { "scope": ["string.regexp"]                       , "settings": { "foreground": "#d16969"  } },
+
+    { "scope": ["constant.character.escape"]           , "settings": { "foreground": "#b64c00","fontStyle":"bold"  } },
     { "scope": ["string.interpolated.backtick.shell"]  , "settings": { "foreground": "#cc6309"  } },
 
     { "scope": ["support.property-name",
                 "support.type.property-name.json",
-                "entity.other.attribute-name.html",
+                "entity.other.attribute-name",
                 "meta.structure.dictionary.key.python",
-                "meta.object-literal.key"]             , "settings": { "foreground": "#a05100"  } },
+                "variable.parameter.function-call",
+                "meta.object-literal.key"]             , "settings": { "foreground": "#967554"  } },
 
     { "scope": ["variable.language.this",
-                "variable.language.special.self.python",
-                "variable.parameter.function.language.special.self.python",
+                "variable.language",
+                "variable.parameter.function.language.special",
                 "entity.name.function.decorator.python",
                 "support.first-lower-underscore-prefix.cpp",
-                "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#6e366f"  } },
+                "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#955396"  } },
 
     { "scope": ["support.double-underscore-prefix.cpp",
-                "support.function.magic.python"]       , "settings": { "foreground": "#569cd6"  } },
-    { "scope": ["support.function.builtin.shell"]      , "settings": { "foreground": "#0c4892"  } },
+                "support.function.magic.python",
+                "support.variable.magic.python"]       , "settings": { "foreground": "#569cd6"  } },
+    { "scope": ["support.function"]      , "settings": { "foreground": "#586779", "fontStyle":"bold"  } },
 
     { "scope": ["keyword.control.less"]                , "settings": { "foreground": "#cc6309"  } },
-    { "scope": ["keyword.operator",
+    { "scope": ["keyword.operator","support.other",
                 "keyword.operator.cast.cpp"]           , "settings": { "foreground": "#cc6309"  } },
     { "scope": ["keyword.operator.new.cpp",
                 "keyword.operator.delete.cpp"]         , "settings": { "foreground": "#3587c1"  } },
@@ -153,6 +152,11 @@
     { "scope": ["support.function.git-rebase"]         , "settings": { "foreground": "#a4a4a4"  } },
     { "scope": ["constant.sha.git-rebase"]             , "settings": { "foreground": "#859e78"  } },
     { "scope": ["storage.modifier.import.java",
-                "storage.modifier.package.java"]       , "settings": { "foreground": "#848484"  } }
+                "storage.modifier.package.java"]       , "settings": { "foreground": "#848484"  } },
+
+
+    {"scope":["support.type"], "settings":{"foreground":"#008888"}},
+    {"scope":["variable.parameter.function"], "settings":{"fontStyle":"italic"}}
+
   ]
 }
