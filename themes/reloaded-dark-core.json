@@ -63,6 +63,7 @@
     { "scope": ["support.all-upper"]                   , "settings": { "foreground": "#d7ba7d"  } },
     { "scope": ["support.class.builtin",
                 "support.first-upper.cpp"]             , "settings": { "foreground": "#42b3c5"  } },
+    { "scope": ["entity.name.type.class.python"]       , "settings": { "foreground": "#bdeff7", "fontStyle": "bold" } },
 
     { "scope": ["storage",
                 "storage.type",
@@ -82,7 +83,7 @@
     { "scope": ["meta.preprocessor.command.cpp",
                 "meta.preprocessor.keyword.cpp",
                 "meta.preprocessor.hash.cpp",
-                "meta.preprocessor.keyword"]           , "settings": { "foreground": "#2d9ae6"  } },
+                "meta.preprocessor.keyword"]           , "settings": { "foreground": "#5d94dc", "fontStyle": "bold" } },
 
     { "scope": ["meta.line-continuation.cpp"]          , "settings": { "foreground": "#EDC869", "fontStyle": "bold" } },
 
@@ -101,7 +102,12 @@
                 "storage.modifier.mutable.cpp",
                 "storage.modifier.volatile.cpp",
                 "storage.modifier.restrict.cpp"]       , "settings": { "foreground": "#2d9ae6", "fontStyle": "bold" } },
-    { "scope": ["operator.namespace-separator.cpp"]    , "settings": { "foreground": "#fa8d6a", "fontStyle": "bold" } },
+
+    { "scope": ["entity.name.function.python"]         , "settings": { "foreground": "#ffffff", "fontStyle": "bold" } },
+
+    { "scope": ["operator.namespace-separator.cpp",
+                "punctuation.section.function.begin.python",
+                "punctuation.separator.colon.python"]  , "settings": { "foreground": "#fa8d6a", "fontStyle": "bold" } },
 
     { "scope": ["support.constant.std.libc.cpp",
                 "support.constant.predefined.cpp",
@@ -122,10 +128,15 @@
                 "meta.object-literal.key"]             , "settings": { "foreground": "#cda869"  } },
 
     { "scope": ["variable.language.this",
+                "variable.language.special.self.python",
+                "variable.parameter.function.language.special.self.python",
+                "entity.name.function.decorator.python",
                 "support.first-lower-underscore-prefix.cpp",
                 "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#9b859d"  } },
 
-    { "scope": ["support.double-underscore-prefix.cpp"], "settings": { "foreground": "#569cd6"  } },
+    { "scope": ["support.double-underscore-prefix.cpp",
+                "support.function.magic.python"]       , "settings": { "foreground": "#569cd6"  } },
+
     { "scope": ["keyword.control.less"]                , "settings": { "foreground": "#d7ba7d"  } },
     { "scope": ["keyword.operator",
                 "keyword.operator.cast.cpp"]           , "settings": { "foreground": "#fa8d6a"  } },
