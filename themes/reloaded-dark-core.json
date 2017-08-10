@@ -63,12 +63,16 @@
     { "scope": ["support.all-upper"]                   , "settings": { "foreground": "#d7ba7d"  } },
     { "scope": ["support.class.builtin",
                 "support.first-upper.cpp"]             , "settings": { "foreground": "#42b3c5"  } },
-    { "scope": ["entity.name.type.class.python"]       , "settings": { "foreground": "#bdeff7", "fontStyle": "bold" } },
+    { "scope": ["entity.name.type.class.python"]       , "settings": { "foreground": "#00b4ff", "fontStyle": "bold" } },
+
+    { "scope": ["punctuation.definition.variable.shell"], "settings": { "foreground": "#eeeeee", "fontStyle": "bold" } },
+    { "scope": ["variable.other.bracket.shell"]         , "settings": { "foreground": "#3db4ff", "fontStyle": "bold" } },
 
     { "scope": ["storage",
                 "storage.type",
                 "storage.type.access",
                 "storage.modifier.const",
+                "storage.modifier.shell",
                 "constant.language",
                 "constant.nullptr.cpp",
                 "keyword.control",
@@ -78,7 +82,8 @@
                 "keyword.operator.typeof.js",
                 "support.something-t.cpp",
                 "support.type.misc.cpp",
-                "support.type.libc.cpp"]               , "settings": { "foreground": "#2d9ae6"  } },
+                "support.type.libc.cpp",
+                "support.type.python"]                 , "settings": { "foreground": "#2d9ae6"  } },
 
     { "scope": ["meta.preprocessor.command.cpp",
                 "meta.preprocessor.keyword.cpp",
@@ -120,6 +125,7 @@
     { "scope": ["constant.character.escape"]           , "settings": { "foreground": "#EDC869"  } },
     { "scope": ["constant.character.format"]           , "settings": { "foreground": "#AfFd8a"  } },
     { "scope": ["string.regexp"]                       , "settings": { "foreground": "#d16969"  } },
+    { "scope": ["string.interpolated.backtick.shell"]  , "settings": { "foreground": "#ff8600"  } },
 
     { "scope": ["support.property-name",
                 "support.type.property-name.json",
@@ -135,7 +141,8 @@
                 "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#9b859d"  } },
 
     { "scope": ["support.double-underscore-prefix.cpp",
-                "support.function.magic.python"]       , "settings": { "foreground": "#569cd6"  } },
+                "support.function.magic.python",
+                "support.function.builtin.shell"]      , "settings": { "foreground": "#569cd6"  } },
 
     { "scope": ["keyword.control.less"]                , "settings": { "foreground": "#d7ba7d"  } },
     { "scope": ["keyword.operator",
