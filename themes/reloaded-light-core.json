@@ -26,7 +26,7 @@
     { "scope": ["comment.decoration"]                  , "settings": { "foreground": "#505050"  } },
     { "scope": ["comment.note"]                        , "settings": { "foreground": "#a07676", "fontStyle": "bold" } },
 
-    { "scope": ["keyword"]                             , "settings": { "foreground": "#0c4892"  } },
+    { "scope": ["keyword"]                             , "settings": { "foreground": "#105bef"  } },
 
     { "scope": ["constant.boolean"]                    , "settings": { "foreground": "#3d6b8c"  } },
     { "scope": ["constant.numeric"]                    , "settings": { "foreground": "#005fd6"  } },
@@ -46,24 +46,24 @@
     { "scope": ["meta.property-name"]                  , "settings": { "foreground": "#22630e"  } },
     { "scope": ["meta.template.expression.js"]         , "settings": { "foreground": "#11359a"  } },
 
-    { "scope": ["support.assert.cpp"]                  , "settings": { "foreground": "#e84a85"  } },
+    { "scope": ["support.assert.cpp"]                  , "settings": { "foreground": "#2763a5", "fontStyle": "bold"  } },
     { "scope": ["support.asm.cpp",
-                "support.likely-unlikely.cpp"]         , "settings": { "foreground": "#9a5454"  } },
+                "support.likely-unlikely.cpp"]         , "settings": { "foreground": "#a22b87", "fontStyle": "bold"  } },
     { "scope": ["support.constant.success.libc.cpp",
                 "support.constant.success.misc.cpp",
-                "support.function-name.success.cpp"]   , "settings": { "foreground": "#10891c" } },
+                "support.function-name.success.cpp"]   , "settings": { "foreground": "#0cbb3d", "fontStyle": "bold" } },
     { "scope": ["support.constant.signal.cpp",
                 "support.constant.failure.libc.cpp",
                 "support.constant.failure.misc.cpp",
-                "support.function-name.failure.cpp"]   , "settings": { "foreground": "#c10000" } },
+                "support.function-name.failure.cpp"]   , "settings": { "foreground": "#fd3131", "fontStyle": "bold" } },
 
     { "scope": ["support.variable.libc.cpp",
                 "support.function-name.std.cpp"]       , "settings": { "foreground": "#7822d6"  } },
 
-    { "scope": ["support.all-upper"]                   , "settings": { "foreground": "#7d6819"  } },
+    { "scope": ["support.all-upper"]                   , "settings": { "foreground": "#002872", "fontStyle": "bold"  } },
     { "scope": ["support.class.builtin",
-                "support.first-upper.cpp"]             , "settings": { "foreground": "#008888"  } },
-    { "scope": ["entity.name.type.class.python"]       , "settings": { "foreground": "#0c4892", "fontStyle": "bold" } },
+                "support.first-upper.cpp"]             , "settings": { "foreground": "#980000"  } },
+    { "scope": ["entity.name.type.class.python"]       , "settings": { "foreground": "#980000", "fontStyle": "bold" } },
 
     { "scope": ["punctuation.definition.variable.shell"], "settings": { "foreground": "#000000", "fontStyle": "bold" } },
     { "scope": ["variable.other.bracket.shell"]         , "settings": { "foreground": "#004f82", "fontStyle": "bold" } },
@@ -83,7 +83,7 @@
                 "support.something-t.cpp",
                 "support.type.misc.cpp",
                 "support.type.libc.cpp",
-                "support.type.python"]                 , "settings": { "foreground": "#0c4892"  } },
+                "support.type.python"]                 , "settings": { "foreground": "#105bef"  } },
 
     { "scope": ["meta.preprocessor.command.cpp",
                 "meta.preprocessor.keyword.cpp",
@@ -106,7 +106,7 @@
                 "storage.modifier.override.cpp",
                 "storage.modifier.mutable.cpp",
                 "storage.modifier.volatile.cpp",
-                "storage.modifier.restrict.cpp"]       , "settings": { "foreground": "#3587c1", "fontStyle": "bold" } },
+                "storage.modifier.restrict.cpp"]       , "settings": { "foreground": "#0c4892", "fontStyle": "bold" } },
 
     { "scope": ["entity.name.function.python"]         , "settings": { "foreground": "#000000", "fontStyle": "bold" } },
 

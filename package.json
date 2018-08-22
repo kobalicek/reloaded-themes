@@ -1,35 +1,49 @@
 {
-  "name": "reloaded-themes",
-  "displayName": "Reloaded Themes",
-  "description": "Themes designed for 'Reloaded C/C++' extension",
-  "version": "0.2.2",
-  "publisher": "reloadedextensions",
-  "engines": { "vscode": "^1.9.0" },
-  "categories": ["Themes"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kobalicek/reloaded-themes.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kobalicek/reloaded-themes/issues"
-  },
-  "contributes": {
-    "themes": [{
-      "label": "Reloaded Dark [Default]",
-      "path": "./themes/reloaded-dark.json",
-      "uiTheme": "vs-dark"
-    }, {
-      "label": "Reloaded Dark [Darker]",
-      "path": "./themes/reloaded-dark-darker.json",
-      "uiTheme": "vs-dark"
-    }, {
-      "label": "Reloaded Dark [High-Contrast]",
-      "path": "./themes/reloaded-dark-hc.json",
-      "uiTheme": "hc-black"
-    }, {
-      "label": "Reloaded Light [Default]",
-      "path": "./themes/reloaded-light.json",
-      "uiTheme": "vs"
-    }]
-  }
+	"name": "reloaded-themes",
+	"displayName": "Reloaded Themes",
+	"description": "Themes designed for 'Reloaded C/C++' extension",
+	"version": "0.2.5",
+	"publisher": "reloadedextensions",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kobalicek/reloaded-themes.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kobalicek/reloaded-themes/issues"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Reloaded Light [Default]",
+				"path": "./themes/reloaded-light.json",
+				"uiTheme": "vs"
+			},
+			{
+				"label": "Reloaded Dark [Default]",
+				"path": "./themes/reloaded-dark.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Reloaded Dark [Darker]",
+				"path": "./themes/reloaded-dark-darker.json",
+				"uiTheme": "vs-dark"
+			},
+			{
+				"label": "Reloaded Dark [High-Contrast]",
+				"path": "./themes/reloaded-dark-hc.json",
+				"uiTheme": "hc-black"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5233b42e-1744-478e-ae91-eefba83aa14d",
+		"publisherDisplayName": "Reloaded Extensions",
+		"publisherId": "ecdd83d0-03c8-42b7-9008-c878f0153524"
+	}
 }

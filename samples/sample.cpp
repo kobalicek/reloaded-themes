@@ -1,16 +1,20 @@
 // Reloaded C/C++ Sample.
+#include <stdint.h>
 #include <stdio.h>
 
 #if !defined(RELOADED) && defined(__amd64__) // Target-specific macros supported.
 # define ALL_UPPERCASED_IF_CONST_OR_MACRO 2
 #endif --invalid_token_after_endif           // Comment is fine...
 
-namespace sample {}
+#define CUSTOM_API
+#define CUSTOM_INLINE inline __attribute__((always_inline))
+
+namespace sample {
 
 /* Markdown code sections like `SampleClass` are recognized. */
 class SampleClass {
 public:
-  inline SomeClass() noexcept : _a(0.1), _b(false) {}
+  inline SampleClass() noexcept : _a(0.1), _b(false) {}
   CUSTOM_INLINE uint8_t asUInt8() noexcept { return static_cast<uint8_t>(_a) + _b; }
   virtual uint8_t virtualMethod() noexcept = 0;
 
@@ -36,7 +40,7 @@ enum SampleEnum {
 };
 
 // Numeric value suffix uses slightly different shade than the number itself.
-static const unsigned int binConst = 0b01010101_00110011_00001111_00000000u;
+static const unsigned int binConst = 0b01010101'00110011'00001111'00000000u;
 static const unsigned long hexConst = 0x12345678UL;
 
 // ---------------------------------------------------------------
@@ -63,3 +67,4 @@ static void sampleDelete(SampleClass* obj) { delete obj; }
 template<typename T>
 static size_t sampleSizeOfT() { return sizeof(T); }
 
+} // sample

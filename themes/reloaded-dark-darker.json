@@ -1,12 +1,8 @@
 {
   "name": "Reloaded Dark",
   "include": "./reloaded-dark-core.json",
-  "settings": [
-    {
-      "settings": {
-        "background": "#101010",
-        "foreground": "#dfdfdf"
-      }
-    }
-  ]
+  "colors": {
+    "editor.background": "#101010",
+    "editor.foreground": "#dfdfdf"
+  }
 }
