@@ -2,6 +2,10 @@
 
 A collection of themes designed to use extended styles provided by [Reloaded C/C++](https://marketplace.visualstudio.com/items?itemName=reloadedextensions.reloaded-cpp) extension. This theme package contains both dark and light themes. Dark theme has 2 variations and one "high-contrast" mode that uses high-contrast UI theme as provided by vscode.
 
+# Deprecated
+
+  * THIS EXTENSION IS DEPRECATED. It was written at a time when there was very little customization in vscode and everything required theming. Now vscode provides a lot of customization that can be setup in user/workspace config. Please don't use this extension anymore.
+
 # The following languages are tested and officially supported
 
   * C/C++

@@ -126,7 +126,7 @@
 
     { "scope": ["support.constant.std.libc.cpp",
                 "support.constant.predefined.cpp",
-                "support.constant.k-something.cpp"]    , "settings": { "foreground": "#1870ca" } },
+                "support.constant.k-something.cpp"]    , "settings": { "foreground": "#ea6ce5" } },
 
     { "scope": ["string",
                 "string.tag",
@@ -148,7 +148,7 @@
                 "variable.parameter.function.language.special.self.python",
                 "entity.name.function.decorator.python",
                 "support.first-lower-underscore-prefix.cpp",
-                "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#cc8484"  } },
+                "support.first-lower-underscore-suffix.cpp"], "settings": { "foreground": "#e6ba80"  } },
 
     { "scope": ["support.double-underscore-prefix.cpp",
                 "support.function.magic.python",
